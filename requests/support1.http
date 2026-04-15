@@ -1,0 +1,25 @@
+### Test santé
+GET http://localhost:3000/api/health
+
+###
+### Lister tous les cours
+GET http://localhost:3000/api/courses
+
+###
+### Obtenir le cours avec id=1
+GET http://localhost:3000/api/courses/1
+
+###
+### Créer un nouveau cours
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{
+  "title": "Bases de donnees",
+  "teacher": "Dr Tchuente",
+  "credits": 6
+}
+
+###
+### Supprimer le cours avec id=1
+DELETE http://localhost:3000/api/courses/1
